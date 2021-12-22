@@ -107,7 +107,7 @@ import {
                     addonId: resourceNames.mongodb,
                     keys: [
                         {
-                            keyName: "MONGO_SRV",
+                            keyName: "mongoSrv",
                             aliases: ["MONGODB_URI"],
                         },
                     ],
