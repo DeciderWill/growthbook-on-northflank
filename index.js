@@ -10,8 +10,8 @@ import {
     const apiToken = process.env.NF_TOKEN;
 
     const resources = {
-        web: "nf-compute-100-1",
-        mongodb: "nf-compute-20",
+        web: "nf-compute-50",
+        mongodb: "nf-compute-10",
     };
     const versions = {
         mongodb: "4.4.8",

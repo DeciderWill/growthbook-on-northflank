@@ -2,7 +2,7 @@
 
 ![Growthbook on Northflank](growthbook-deployed-on-northflank.png)
 
-Below is a setup on Northflank costing ~ $10.
+Below is a setup on Northflank costing ~ $12 a month.
 
 To run the script you need a [Northflank API token](https://northflank.com/docs/v1/application/secure/manage-api-tokens) set as an environment variable `NF_TOKEN`
 
@@ -24,9 +24,9 @@ The steps below can also be followed in the UI.
 
 - A project in US Central, or for Europe West - over-ride environment with `NF_REGION=europe-west`
 - 1 addon
-    - MongoDB on Northflank ($4pm)
+    - MongoDB on Northflank ($2/pm)
 - 1 deployment services
-    - Web: A deployment service deploying latest `growthbook/growthbook:latest` from DockerHub ($5/pm)
+    - Web: A deployment service deploying latest `growthbook/growthbook:latest` from DockerHub ($10/pm)
 - 1 secret group
    - Securely store and inject environment variables with your `APP_ORIGIN`, `API_HOST`, `JWT_SECRET`, `ENCRYPTION_KEY` and MongoDB `MONGODB_URI` connection strings automatically
    - Use https://p1--next-js-secret-gen--gtm-deploy--nort-xjjq.code.run/secrets/64 to generate `JWT_SECRET` and `ENCRYPTION_KEY`.
