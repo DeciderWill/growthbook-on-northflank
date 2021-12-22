@@ -22,10 +22,10 @@ The steps below can also be followed in the UI.
 
 #### On Northflank I can configure:
 
-- A project in US Central, or for Europe West - over-ride environment with `NF_REGION=europe-west`
+- A project in US Central, or for Europe West - override environment with `NF_REGION=europe-west`
 - 1 addon
     - MongoDB on Northflank ($2/pm)
-- 1 deployment services
+- 1 deployment service
     - Web: A deployment service deploying latest `growthbook/growthbook:latest` from DockerHub ($10/pm)
 - 1 secret group
    - Securely store and inject environment variables with your `APP_ORIGIN`, `API_HOST`, `JWT_SECRET`, `ENCRYPTION_KEY` and MongoDB `MONGODB_URI` connection strings automatically
