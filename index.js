@@ -14,8 +14,7 @@ import {
         mongodb: "nf-compute-20",
     };
     const versions = {
-        branch: "master",
-        mongodb: "13.4.0",
+        mongodb: "4.4.8",
     };
 
     const resourceNames = {
