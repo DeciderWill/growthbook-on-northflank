@@ -8,7 +8,6 @@ import {
     const projectId = "growthbook";
     const region = process.env.NF_REGION || "us-central";
     const apiToken = process.env.NF_TOKEN;
-
     const resources = {
         web: "nf-compute-50",
         mongodb: "nf-compute-10",
@@ -85,12 +84,10 @@ import {
         },
     });
 
-    const {
-        data: { ports },
-    } = await apiClient.get.service.ports({
+    const { data: { ports }} = await apiClient.get.service.ports({
         parameters: {
             projectId: projectId,
-            serviceId: resourceNames.mongodb,
+            serviceId: resourceNames.web,
         },
     });
 
@@ -120,13 +117,13 @@ import {
                 APP_ORIGIN: APP_ORIGIN,
                 API_HOST: API_HOST,
                 JWT_SECRET: crypto
-                    .randomBytes(124)
+                    .randomBytes(200)
                     .toString("base64")
-                    .substring(0, length),
+                    .substring(0, 128),
                 ENCRYPTION_KEY: crypto
-                    .randomBytes(124)
+                    .randomBytes(200)
                     .toString("base64")
-                    .substring(0, length),
+                    .substring(0, 128),
                 NODE_ENV: "production",
             },
         },
