@@ -114,8 +114,8 @@ import {
                 },
             ],
             data: {
-                APP_ORIGIN: APP_ORIGIN,
-                API_HOST: API_HOST,
+                APP_ORIGIN: `https://${APP_ORIGIN}`,
+                API_HOST: `https://${API_HOST}`,
                 JWT_SECRET: crypto
                     .randomBytes(200)
                     .toString("base64")
